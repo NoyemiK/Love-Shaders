@@ -13,8 +13,7 @@ function love.load()
       number height = floor(texture_coords.y * 720);
       
       //Divide the image into two scan regions
-      for (int i=0;i<720;i+=2){
-        if (mod(height, 2) != 0){
+      if (mod(height, 2) != 0){
         color.r = 0;
         color.b = 1 - (floor(noise*160)/16);
         color.g = pixel.g * abs(sin(time));
@@ -24,7 +23,6 @@ function love.load()
         pixel.r = pixel.r * abs(floor(sin(time) * 4) / 4);
         pixel.b = 0.5 * pixel.b;
         return pixel;
-        }
       }
     }
   ]]
@@ -39,8 +37,7 @@ function love.load()
       number height = floor(texture_coords.y * 720);
       
       //This divides the image into two scan regions
-      for (int i=0;i<720;i+=2){
-        if (mod(height, 2) != 0){
+      if (mod(height, 2) != 0){
           color.r = 0;
           color.b = 1 - (floor(noise*160)/16);
           color.g = 1 - (floor(noise*160)/16);
@@ -51,7 +48,6 @@ function love.load()
           pixel.b = 0.5 * pixel.b;
           pixel.g = pixel.g * 0.5;
           return pixel;
-        }
       }
     }
   ]]
@@ -67,8 +63,7 @@ function love.load()
       number height = floor(texture_coords.y * 720);
       
       //This divides the image into two scan regions
-      for (int i=0;i<720;i+=2){
-        if (mod(height, 2) != 0){
+      if (mod(height, 2) != 0){
           color.g = 0;
           color.b = 1 - (floor(noise*160)/16);
           color.r = (0.7 *color.r) - (floor(sin(time) * 4)/6);
@@ -79,7 +74,6 @@ function love.load()
           pixel.b = 0.5 * pixel.b;
           pixel.g = 0.5 * pixel.g;
           return pixel;
-        }
       }
     }
   ]]
@@ -96,8 +90,7 @@ function love.load()
       number height = floor(texture_coords.y * 720);
       
       //This divides the image into two scan regions
-      for (int i=0;i<720;i+=2){
-        if (mod(height, 2) != 0){
+      if (mod(height, 2) != 0){
           color.r = 0;
           color.g = 0.8 - (floor(noise*160)/16);
           color.b = 1 - (floor(noise*160)/16);
@@ -107,7 +100,6 @@ function love.load()
           pixel.b = 0.5 * pixel.b;
           pixel.g = 0;
           return pixel;
-        }
       }
     }
   ]]
@@ -124,8 +116,7 @@ function love.load()
       number height = floor(texture_coords.y * 720);
       
       //This divides the image into two scan regions
-      for (int i=0;i<720;i+=2){
-        if (mod(height, 2) != 0){
+      if (mod(height, 2) != 0){
           color.r = 0;
           color.g = 0.8 - (floor(noise*160)/16);
           color.b = 1 - (floor(noise*160)/16);
@@ -135,7 +126,6 @@ function love.load()
           pixel.b = 0.5 * pixel.b;
           pixel.g = 0;
           return pixel;
-        }
       }
     }
   ]]
