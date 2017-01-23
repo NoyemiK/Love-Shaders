@@ -6,7 +6,7 @@ Shaders for various scanline effects with LOVE and GLSL.
 
 Press the "z" key to cycle through the shaders in the table. You can add your own shaders by adding a new entry to the shaderArray[x] table and defining your own through LOVE's GLSL implementation!
 
-![Sine modulated interlace artifacting!](http://i.imgur.com/HQSLlHK.gif "Sine modulated interlace")
+![Time-dependent Chromatic Aberration/Modulation](http://i.imgur.com/DgwZ4oE.gifv)
 
 # Technical Information
 
