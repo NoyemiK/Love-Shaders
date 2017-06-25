@@ -129,7 +129,7 @@ function love.load()
       }
     }
   ]]
-    liza = love.graphics.newImage('assets/lizaveta.png')
+    liza = love.graphics.newImage('assets/MimiInline.png')
     sel = 1
   end
   
